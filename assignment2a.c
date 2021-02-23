@@ -11,9 +11,9 @@ int isValid(char * s)
 {
  
 
-    int i;
+    int i,n;
     
-    for(i=0;i<5;i++)
+    for(i=0;i<n;i++)
     {
     if ((s[i]==40) || (s[i]==41) || (s[i]==91) || (s[i]==93) || (s[i]==123) || (s[i] ==125))
     { 
@@ -30,10 +30,6 @@ int isValid(char * s)
 
 void main()
 {
-	
-	 
-	 
-	 
 	int i,n;
 	char* s[100];
 
@@ -41,7 +37,7 @@ void main()
 	
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&s[i]);
+		scanf("%c",&s[i]);
 	} 
 	
  isValid(s[i]);
